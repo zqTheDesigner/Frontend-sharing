@@ -1,0 +1,18 @@
+<html>
+  <div id="app"></div>
+
+  <script>
+    console.log('Running advanced calculator')
+    // inline-script
+    var appElement = document.getElementById('app')
+    var setOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    setOfNumbers.forEach((number) => {
+      console.log(number)
+      var numPadButton = '<button>' + number + '</button>'
+      appElement.innerHTML = appElement.innerHTML + numPadButton
+      console.log('Looping time: ', number)
+      console.log('The html is', appElement.innerHTML)
+    })
+  </script>
+</html>
